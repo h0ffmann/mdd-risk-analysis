@@ -55,7 +55,7 @@ that is how i learned Scala, the language of my first job.
 | [`src/R-analysis/`](src/R-analysis/) | the analysis: path simulation (`Path_Simulation*.R`), a backtest of models (`backtest_models.R`), the drawdown (`MaximoDrawdrop.R`) | R |
 | [`src/data/`](src/data/) | scripts that fetch a price series, and the series as CSV | R |
 | [`src/mdd/`](src/mdd/) | `mddApp`: reads the CSV into a Spark DataFrame and prints three numbers from its functions `desvPadraoCalc`, `mddCalc` and `average` | Scala 2.11.7, Spark 2.1.0, sbt |
-| [`src/var/`](src/var/) | `calcVar.scala`, a first example | Scala |
+| [`src/var/`](src/var/) | `calcVar.scala`: an example on variance that carries the licence header of the Apache Software Foundation. its commit calls it the base example | Scala |
 | [`app/`](app/) | a web page with a chart, and a server that starts the analysis through a shell script | Node.js, Express, Chart.js |
 | [`doc/`](doc/) | the first and the final report of the course, in Portuguese, and a thesis that the work read | PDF |
 
@@ -89,5 +89,6 @@ repository shows who committed what.
 
 ## license
 
-[Apache-2.0](LICENSE), for the code that the three students wrote. the thesis in `doc/` is its
-author's.
+[Apache-2.0](LICENSE), for the code that the three students wrote. a file that has its own
+header keeps it (`src/var/src/scala/calcVar.scala` has the Apache Software Foundation's). the
+thesis in `doc/` is its author's.
